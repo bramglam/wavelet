@@ -25,6 +25,10 @@ class Handler implements URLHandler {
         }
     }
 }
+//Defaults to slash
+//num is global variable
+//Calls query everyhting after ? is a string
+//Looking for equals sign
 
 class NumberServer {
     public static void main(String[] args) throws IOException {
@@ -32,6 +36,7 @@ class NumberServer {
             System.out.println("Missing port number! Try any number between 1024 to 49151");
             return;
         }
+        //After running command what was put in after it
 
         int port = Integer.parseInt(args[0]);
 
